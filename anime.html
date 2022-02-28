@@ -24,13 +24,11 @@
     <style>
       h1, h2, h3, h4 {font-family: 'Fugaz One', cursive;}
       
-      p {font size: 24px; font-family: 'Barlow', sans-serif;}
+      p, a {font size: 24px; font-family: 'Barlow', sans-serif;}
       
       .name {font-family: 'Sansita Swashed', cursive;}
       
       .imgSet {width:100%; max-height: 700px; height:auto; object-fit: cover; object-position: 0 10%;}
-      
-      .sidebar {align-items: center; justify-content: center;}
     </style>
     
     <title>My Website</title>
@@ -53,7 +51,7 @@
     <div class="w3-sidebar w3-black" style="padding: 40% 0;">
       <a href="#character" class="w3-button" onclick="showChar()"><i class=""></i>Characters</a> 
       <a href="#chakraNature" class="w3-button" onclick="showChakra()"><i class=""></i>Chakra Nature</a> 
-      <a href="#kekkeiGenkai" class="w3-bar-item w3-button" onclick="showKekkei()"><i class="">Kekkei Genkai</i></a> 
+      <a href="#kekkeiGenkai" class="w3-button" onclick="showKekkei()"><i class="">Kekkei Genkai</i></a> 
     </div>
     
     <div class="w3-content w3-display-container w3-margin-top" id="character">
@@ -138,6 +136,21 @@
       
     </div>  
       
+    <div class="w3-content w3-display-container w3-margin-top" id="chakraNature">
+      
+      <div class="w3-display-container">
+        <img src="img/chakraNature.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Chakra Nature
+        </div>
+        <p class="w3-light-gray w3-padding">Chakra is the power source for all of the special abilities shown in Naruto. Many of the ninjutsu 
+          used are elemental in nature, and follow the base five elements of water, fire, wind, lightning, and fire. Every shinobi is born with 
+          an affinity for one of these elements, but there are a select few that are capable of mastering two or more. 
+        </p>
+      </div>
+      
+    </div>  
+    
     <script>
       var slideIndex = 1;
       showDivs(slideIndex);
