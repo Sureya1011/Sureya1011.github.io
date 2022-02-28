@@ -30,7 +30,22 @@
       
       .imgSet {width:100%; max-height: 700px; height:auto; object-fit: cover; object-position: 0 10%;}
       
-      .sidebar {}
+      #sidebar a{
+      
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        color: black;
+        border-radius: 0 5px 5px 0; 
+
+      }
+      
+      #sidebar a:hover {
+        left: 0;
+      }
     </style>
     
     <title>My Website</title>
@@ -50,7 +65,7 @@
       <p>I started watching naruto since 2019 even though naruto aired 2002</p>
     </div>
     
-    <div class="sidebar w3-sidebar w3-black" style="padding: 40% 0;">
+    <div id="sidebar" style="padding: 40% 0;">
       <a href="#character" class="w3-button" onclick="showChar()"><i class=""></i>Characters</a> 
       <a href="#chakraNature" class="w3-button" onclick="showChakra()"><i class=""></i>Chakra Nature</a> 
       <a href="#kekkeiGenkai" class="w3-button" onclick="showKekkei()"><i class="">Kekkei Genkai</i></a> 
