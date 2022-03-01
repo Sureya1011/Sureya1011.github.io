@@ -53,11 +53,6 @@
         left: 0;
       }
       
-      #chakraNature img{
-        display: block;
-        margin: 0 auto;
-      }
- 
       @media only screen and (max-width: 1100px) {
         #character, #chakraNature, #kekkeiGenkai {
           margin-left: 55px;
@@ -85,7 +80,7 @@
     
     <div id="sidebar" class="w3-bar-block">
       <a href="#character" class="w3-bar-item w3-button" onclick="showChar()" style="top: 420px;">Characters <i class="fas fa-user w3-xlarge"></i></a> 
-      <a href="#chakraNature" class="w3-bar-item w3-button" onclick="showChakra()" style="top: 490px;">Spin-Off Series <i class="fas fa-leaf w3-xlarge"></i></a> 
+      <a href="#chakraNature" class="w3-bar-item w3-button" onclick="showSpinOff()" style="top: 490px;">Spin-Off Series <i class="fas <i class="fa-solid fa-film"></i> w3-xlarge"></i></a> 
     </div>
     
     <div class="w3-content w3-display-container w3-margin-top" id="character">
@@ -172,7 +167,7 @@
 
     </div>
       
-    <div class="w3-content w3-display-container w3-margin-top" id="kekkeiGenkai" style="display: none;">
+    <div class="w3-content w3-display-container w3-margin-top" id="spinOff" style="display: none;">
       
       <div class="w3-display-container mySlides">
         <img src="img/theFlash.jpg" class="imgSet">
@@ -227,32 +222,18 @@
       
       function showChar() {
         var charDiv= document.getElementById("character");
-        var chakraDiv= document.getElementById("chakraNature");
-        var kekkeiDiv= document.getElementById("kekkeiGenkai");
+        var spinOffDIv= document.getElementById("spinOff");
         
         charDiv.style.display = "block";
-        chakraDiv.style.display = "none";
-        kekkeiDiv.style.display = "none";
+        spinOffDIv.style.display = "none";
       }
       
-      function showChakra() {
+      function showSpinOff() {
         var charDiv= document.getElementById("character");
-        var chakraDiv= document.getElementById("chakraNature");
-        var kekkeiDiv= document.getElementById("kekkeiGenkai");
+        var spinOffDIv= document.getElementById("spinOff");
         
         charDiv.style.display = "none";
-        chakraDiv.style.display = "block";
-        kekkeiDiv.style.display = "none";
-      }
-      
-      function showKekkei() {
-        var charDiv= document.getElementById("character");
-        var chakraDiv= document.getElementById("chakraNature");
-        var kekkeiDiv= document.getElementById("kekkeiGenkai");
-        
-        charDiv.style.display = "none";
-        chakraDiv.style.display = "none";
-        kekkeiDiv.style.display = "block";
+        spinOffDIv.style.display = "block";
       }
     </script>
   </body>
