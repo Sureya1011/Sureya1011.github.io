@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sureya1011, Personal, Biodata, Sureya">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <script src="https://kit.fontawesome.com/76bbd06639.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fugaz+One&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-218079844-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-218079844-1');
+    </script>
+    
+    <style>
+      h1, h2, h3, h4 {font-family: 'Fugaz One', cursive;}
+      
+      p, a {font size: 24px; font-family: 'Barlow', sans-serif;}
+      
+      .name {font-family: 'Sansita Swashed', cursive;}
+      
+      .imgSet {width:100%; max-height: 700px; height:auto; object-fit: cover; object-position: 0 10%;}
+      
+      #sidebar a{
+      
+        position: absolute;
+        left: -135px;
+        transition: 0.3s;
+        margin: 10px 0px;
+        padding: 20px 15px;
+        width: 180px;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 0 5px 5px 0; 
+    
+      }
+      
+      #sidebar a:hover {
+        left: 0;
+      }
+ 
+      @media only screen and (max-width: 1100px) {
+        #character, #weapon {
+          margin-left: 55px;
+          margin-right: 10px;
+        }
+      }
+    </style>
+    
+    <title>My Website</title>
+    
+  </head>
+  
+  <body class="w3-white">
+    <div class="w3-bar w3-border w3-black w3-center">
+      <a href="index.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Personal</a>
+      <a href="anime.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Anime</a>
+      <a href="series.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Series</a>
+      <a href="game.html" style="width:25%" class="w3-bar-item w3-button w3-mobile w3-light-gray">Game</a>
+    </div>
+    
+    <div class="w3-container w3-center w3-black">
+      <h1>My Favourite Game : God of War 2</h1>
+      <p>These game is diamond.</p>
+    </div>
+    
+    <div id="sidebar" class="w3-bar-block">
+      <a href="#character" class="w3-bar-item w3-button" onclick="showChar()" style="top: 420px;">Characters <i class="fas fa-user w3-xlarge"></i></a> 
+      <a href="#weapon" class="w3-bar-item w3-button" onclick="showWeapon()" style="top: 490px;">Chakra Nature <i class="fas fa-swords w3-xlarge"></i></a> 
+    </div>
+    
+    <div class="w3-content w3-display-container w3-margin-top" id="character">
+
+      <div class="w3-display-container mySlides">
+        <img src="img/kratos.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Kratos
+        </div>
+        <p class="w3-light-gray w3-padding">The main protagonist of the game. At the start of God of War II, Kratos is the God of War 
+          after defeating Ares but not being released from his torment made his sorrow boil into hatred and anger for the Gods. He turns
+          to his mortal army of Sparta to wage war on cities across the lands of Greece, which raises the anger of Zeus and the other 
+          gods. Soon, he finds he is betrayed by Zeus and reduced to a mortal and his powers are taken away from him. Kratos must then 
+          travel to the Sisters of Fate to exact revenge, take back his godly powers and destroy Zeus once and for all.
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/athena.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Athena
+        </div>
+        <p class="w3-light-gray w3-padding">The goddess of wisdom, defensive war and industry, and the deuteragonist. Though a constant 
+          companion in the first game, Athena only appears three times; to warn Kratos his actions are displeasing the other gods, while 
+          channeling herself through a statue, and to save Zeus by stepping in the way of Kratos' killing blow.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/gaia.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Gaia
+        </div>
+        <p class="w3-light-gray w3-padding">Mother of the Titans, and connected to all things of the Earth and life. Along with the 
+          other Titans, she was banished in the War of the Titans, and seeing Kratos' quest for revenge on Zeus, offers to lend her 
+          power to his cause. She helps Kratos throughout his journey in hopes that together they can bring about the fall of Olympus. 
+          She also acts as the narrator of the game.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/atlas.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Atlas
+        </div>
+        <p class="w3-light-gray w3-padding">Atlas is one of the mighty Titans that once had dominion over the world. After their fall 
+          from grace, Atlas would cooperate with the goddess Persephone in order to destroy the world, but was defeated by Kratos. 
+          Defeated and contained, Atlas was forced to carry the world on his shoulders, as he would forever remain at the top of the 
+          Pillar of the World. He serves as the secondary antagonist in God of War: Chains of Olympus and as an ally in God of War II.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/zeus.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Zeus
+        </div>
+        <p class="w3-light-gray w3-padding">The King of Olympus and the gods who created the Blade of Olympus, and the main antagonist 
+          of the game. He is the father of Ares, Athena and Kratos. He betrays Kratos in the beginning of the second game.
+        </p>
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+    
+    <div class="w3-content w3-display-container w3-margin-top" id="weapon" style="display: none;">
+      
+      <div class="w3-display-container ">
+        <img src="img/athenaBlade.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
+          Athena's Blade
+        </div>
+        <p class="w3-light-gray w3-padding">Magical blades Bestowed on Kratos by the goddess Athena. They function as the same weapon 
+          as the Blades of Chaos, but these were given to Kratos as he ascends to Godhood by Athena, and after Ares had taken the Blades 
+          of Chaos from Kratos during the final battle in God of War. Weakest of the other weapons, the Blades of Athena are still fast 
+          and reliable in close combat.
+        </p>
+      </div>
+      
+      <div class="w3-display-container ">
+        <img src="img/hammer.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
+          Barbarian Hammer
+        </div>
+        <p class="w3-light-gray w3-padding"> A slow but powerful close combat weapon originally wielded by the Barbarian King. With it, 
+          Kratos can deliver powerful slams and smashes, and also summon legions of souls.
+        </p>
+      </div>
+      
+      <div class="w3-display-container ">
+        <img src="img/spear.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
+          Spear of Destiny
+        </div>
+        <p class="w3-light-gray w3-padding">A weapon originally used by the Dark Rider. With it Kratos can perform deadly swipes and 
+          stabs, and can also fire dangerous piercing projectiles at enemies.
+        </p>
+      </div>
+      
+      <div class="w3-display-container ">
+        <img src="img/olympus.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
+          Blade of Olympus
+        </div>
+        <p class="w3-light-gray w3-padding">A divine sword so powerful it was the blade that allowed Zeus to defeat the Titans it can 
+          also harm and kill other Gods. The weapon can be powered up with experience orbs to increase its power and add new attacks. 
+          However, the Blade of Olympus, normally a weapon provided solely by plot developments, can only be used during the fight with 
+          the Colossus, fighting Zeus in the last bit of gameplay, and via Bonus Play.
+        </p>
+      </div>
+      
+    </div>  
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      
+      function showChar() {
+        var charDiv= document.getElementById("character");
+        var weaponDiv= document.getElementById("weapon");
+        
+        charDiv.style.display = "block";
+        weaponDiv.style.display = "none";
+      }
+      
+      function showWeapon() {
+        var charDiv= document.getElementById("character");
+        var weaponDiv= document.getElementById("weapon");
+        
+        charDiv.style.display = "none";
+        weaponDiv.style.display = "block";
+    </script>
+  </body>
+</html>
