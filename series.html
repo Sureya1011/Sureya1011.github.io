@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sureya1011, Personal, Biodata, Sureya">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <script src="https://kit.fontawesome.com/76bbd06639.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fugaz+One&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-218079844-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-218079844-1');
+    </script>
+    
+    <style>
+      h1, h2, h3, h4 {font-family: 'Fugaz One', cursive;}
+      
+      p, a {font size: 24px; font-family: 'Barlow', sans-serif;}
+      
+      .name {font-family: 'Sansita Swashed', cursive;}
+      
+      .imgSet {width:100%; max-height: 700px; height:auto; object-fit: cover; object-position: 0 10%;}
+      
+      #sidebar a{
+      
+        position: absolute;
+        left: -135px;
+        transition: 0.3s;
+        margin: 10px 0px;
+        padding: 20px 15px;
+        width: 180px;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 0 5px 5px 0; 
+    
+      }
+      
+      #sidebar a:hover {
+        left: 0;
+      }
+      
+      #chakraNature img{
+        display: block;
+        margin: 0 auto;
+      }
+ 
+      @media only screen and (max-width: 1100px) {
+        #character, #chakraNature, #kekkeiGenkai {
+          margin-left: 55px;
+          margin-right: 10px;
+        }
+      }
+    </style>
+    
+    <title>My Website</title>
+    
+  </head>
+  
+  <body class="w3-orange">
+    <div class="w3-bar w3-border w3-black w3-center">
+      <a href="index.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Personal</a>
+      <a href="anime.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Anime</a>
+      <a href="series.html" style="width:25%" class="w3-bar-item w3-button w3-mobile w3-light-gray">Series</a>
+      <a href="game.html" style="width:25%" class="w3-bar-item w3-button w3-mobile">Game</a>
+    </div>
+    
+    <div class="w3-container w3-center w3-black">
+      <h1>My Favourite Series : Arrow</h1>
+      <p>Nothing to say about this right now</p>
+    </div>
+    
+    <div id="sidebar" class="w3-bar-block">
+      <a href="#character" class="w3-bar-item w3-button" onclick="showChar()" style="top: 420px;">Characters <i class="fas fa-user w3-xlarge"></i></a> 
+      <a href="#chakraNature" class="w3-bar-item w3-button" onclick="showChakra()" style="top: 490px;">Spin-Off Series <i class="fas fa-leaf w3-xlarge"></i></a> 
+    </div>
+    
+    <div class="w3-content w3-display-container w3-margin-top" id="character">
+
+      <div class="w3-display-container mySlides">
+        <img src="img/greenArrow.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Oliver Queen AKA GReen Arrow        
+        </div>
+        <p class="w3-light-gray w3-padding">A billionaire playboy more interested in girls, drinking and partying than doing anything 
+          with his life until becoming stranded on a (supposedly) deserted island for five years, during which he became a hardened 
+          killer. Oliver returned to Starling City and began a crusade to save the city as a vigilante, drawing in several allies to 
+          his cause. After eight years of saving his city (and the world on more than a few occasions), he saved the entire multiverse 
+          during a dire Crisis. However, he did so at the cost of his life. Gone, but far from forgotten, his legacy lives on with every 
+          hero and vigilante that came after him.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/spartan.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          John Diggle AKA Spartan
+        </div>
+        <p class="w3-light-gray w3-padding">Hired by Moira to be Oliver's bodyguard, Diggle quickly became his first partner in his 
+          vigilante activities. As a former special forces soldier, Diggle has extensive combat training and several connections in 
+          the military and government agencies that he can exploit to assist in their missions. In Season 3, Diggle re-marries his 
+          ex-wife from the Army, Lyla Michaels and becomes a father to their newborn-daughter Sara, who is Cosmic Retconed into their 
+          son, John Jr. In Season 6, John takes up the Green Arrow mantle from Oliver, who stepped back to raise his son William.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/blackCanary.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Laurel Lance AKA Black Canary
+        </div>
+        <p class="w3-light-gray w3-padding">Oliver's ex-girlfriend, Laurel is a lawyer for the City Necessary Resources Initiative 
+          (CNRI) in Arrow Season One and an Assistant District Attorney in Season Two, until she began to expand her role into a 
+          vigilante in Season Three. Unfortunately, she was killed in action towards the end of Season Four, and right before he 
+          promotion to District Attorney, too. After her death, Laurel lives through the hearts and memories of her family and friends, 
+          particularly Quentin, Sara, Oliver, and Thea.</p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/deathStroke.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Slade Wilson AKA Deathstroke
+        </div>
+        <p class="w3-light-gray w3-padding">An ASIS agent sent to Lian Yu with his partner Billy Wintergreen to save Yao Fei, he was 
+          betrayed by Billy during the mission and left to fight against Edward Fyers alone, until Oliver washed up on the island. 
+          The two began a fight against Fyers in an effort to stop his plot and leave the island, but continued to become embroiled in 
+          conflicts and conspiracies that revolved around it. Later, his and Oliver's involvement in these conflicts with the mad 
+          scientist Anthony Ivo got him killed, leading to Oliver injecting him with a "miracle" serum developed by WWII-era Japan called 
+          the Mirakuru. As a result, Slade came back to life with superhuman abilities, but went completely insane and tried to make 
+          Oliver suffer. He continues this crusade into Season Two's present day, where he becomes the main villain for that arc. However,
+          after a short return as a villain in Season 3, the effect of the Mirakuru slowly completely leaves his body and he comes to 
+          regret his horrible deeds. When Oliver asks for his help against Prometheus in Season 5, Slade willingly assists him, trying to 
+          atone for his crimes. Another Season later, Oliver returns the favour, with the two finally parting as friends again.
+        </p>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="img/malcolm.png" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Malcolm Merlyn AKA Ra's al-Ghul
+        </div>
+        <p class="w3-light-gray w3-padding">Father of Tommy & Thea, CEO of Merlyn Global Group, former member of the League of Assassins, 
+          and leader of Tempest, a group of wealthy and powerful Starling City citizens plotting to "save" the city by destroying the
+          Glades. After Moira Queen tells the world he's a criminal, he goes underground after the (partial) success of the Undertaking 
+          and manages to manipulate events to put himself in charge of the League of Assassins and form an uneasy alliance with Team 
+          Arrow. However, his sins came back to haunt him as he loses control of the League thanks to Nyssa Al-Ghul and Oliver, and 
+          joins HIVE out of spite. However, when HIVE wants to destroy the world with no survivors, he goes back to Team Arrow to help 
+          save the world. After he helped Team Arrow save the world from HIVE, he was approached by Eobard Thawne and Damian Darhk to 
+          join their organization the same night Oliver kills Darhk's future self. Having lost everything and thoroughly burned his 
+          bridges with Team Arrow, he accepts a chance to revive his fortunes and perhaps fix some old mistakes that keep haunting him, 
+          joining the Legion of Doom. After he and the Legion are defeated by the Legends, he is returned to his crummy existence in the 
+          present. Just in time to come to Oliver's aid in the war against Adrian Chase who has kidnapped all of Oliver's friends and 
+          brought them to Lian Yu, including Thea. Partaking in the battle, Thea ends up stepping on a mine. To save her life, Malcolm 
+          takes her place then sets off the mine to take out Harkness and Chase's other goons.</p>
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+      
+    <div class="w3-content w3-display-container w3-margin-top" id="kekkeiGenkai" style="display: none;">
+      
+      <div class="w3-display-container mySlides">
+        <img src="img/theFlash.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          The Flash
+        </div>
+        <p class="w3-light-gray w3-padding">The Flash is an American TV series, a modern re-imagining of the DC Comics superhero, 
+          The Flash. After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super 
+          speed, becoming the Flash, fighting crime in Central City.
+        </p>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="img/supergirl.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          Supergirl
+        </div>
+        <p class="w3-light-gray w3-padding">Supergirl is a television series based on the DC Comics character, Supergirl. The series 
+          is the third series set in the Arrowverse, sharing continuity with the other television series of the franchise.
+        </p>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="img/legends.jpg" class="imgSet">
+        <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
+          DC's Legends of Tomorrow
+        </div>
+        <p class="w3-light-gray w3-padding">DC's Legends of Tomorrow, or simply Legends of Tomorrow, is a TV series that began airing 
+          January 21, 2016. It's described as a "superhero team-up show", acting as a spin-off of sorts from Arrow and The Flash.
+        </p>
+      </div>
+    </div>  
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      
+      function showChar() {
+        var charDiv= document.getElementById("character");
+        var chakraDiv= document.getElementById("chakraNature");
+        var kekkeiDiv= document.getElementById("kekkeiGenkai");
+        
+        charDiv.style.display = "block";
+        chakraDiv.style.display = "none";
+        kekkeiDiv.style.display = "none";
+      }
+      
+      function showChakra() {
+        var charDiv= document.getElementById("character");
+        var chakraDiv= document.getElementById("chakraNature");
+        var kekkeiDiv= document.getElementById("kekkeiGenkai");
+        
+        charDiv.style.display = "none";
+        chakraDiv.style.display = "block";
+        kekkeiDiv.style.display = "none";
+      }
+      
+      function showKekkei() {
+        var charDiv= document.getElementById("character");
+        var chakraDiv= document.getElementById("chakraNature");
+        var kekkeiDiv= document.getElementById("kekkeiGenkai");
+        
+        charDiv.style.display = "none";
+        chakraDiv.style.display = "none";
+        kekkeiDiv.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
+
 
