@@ -167,9 +167,9 @@
 
     </div>
       
-    <div class="w3-content w3-display-container w3-margin-top" id="spinOff" style="display: none;">
+    <div class="w3-content w3-display-container w3-margin-top" id="spinOff" style="display:;">
       
-      <div class="w3-display-container mySlides1">
+      <div class="w3-display-container ">
         <img src="img/theFlash.jpg" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
           The Flash
@@ -180,7 +180,7 @@
         </p>
       </div>
       
-      <div class="w3-display-container mySlides1">
+      <div class="w3-display-container ">
         <img src="img/supergirl.jpg" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
           Supergirl
@@ -190,7 +190,7 @@
         </p>
       </div>
       
-      <div class="w3-display-container mySlides1">
+      <div class="w3-display-container ">
         <img src="img/legends.jpg" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-orange">
           DC's Legends of Tomorrow
@@ -212,17 +212,6 @@
       function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides1");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length}
         for (i = 0; i < x.length; i++) {
