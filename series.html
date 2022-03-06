@@ -169,7 +169,7 @@
       
     <div class="w3-content w3-display-container w3-margin-top" id="spinOff" style="display: none;">
       
-      <div class="w3-display-container ">
+      <div class="w3-display-container myImages">
         <img src="img/theFlash.jpg" alt="The Flash's Picture" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
           The Flash
@@ -180,7 +180,7 @@
         </p>
       </div>
       
-      <div class="w3-display-container ">
+      <div class="w3-display-container myImages">
         <img src="img/supergirl.jpg" alt="Supergirl's Picture" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
           Supergirl
@@ -190,7 +190,7 @@
         </p>
       </div>
       
-      <div class="w3-display-container ">
+      <div class="w3-display-container myImages">
         <img src="img/legends.jpg" alt="Legends of Tomorow's Picture" class="imgSet">
         <div class="name w3-display-topleft w3-large w3-container w3-padding-16 w3-black w3-text-lime">
           DC's Legends of Tomorrow
@@ -200,9 +200,11 @@
         </p>
       </div>
       
-      <div class="w3-section">
-        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+      <div class="w3-center">
+        <div class="w3-section">
+          <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
       </div>
     </div>  
     
@@ -223,6 +225,27 @@
            x[i].style.display = "none";  
         }
         x[slideIndex-1].style.display = "block";  
+      }
+      
+      var imageIndex = 1;
+      showDivs1(imageIndex);
+
+      function plusDivs1(n) {
+        showDivs1(imageIndex += n);
+      }
+
+      function currentDiv1(n) {
+        showDivs1(imageIndex = n);
+      }
+
+      function showDivs1(n) {
+        var i;
+        var x = document.getElementsByClassName("myImages");
+        if (n > x.length) {imageIndex = 1}    
+        if (n < 1) {imageIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
       }
       
       function showChar() {
