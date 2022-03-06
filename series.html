@@ -234,10 +234,6 @@
         showDivs1(imageIndex += n);
       }
 
-      function currentDiv1(n) {
-        showDivs1(imageIndex = n);
-      }
-
       function showDivs1(n) {
         var i;
         var x = document.getElementsByClassName("myImages");
@@ -246,6 +242,7 @@
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";  
         }
+        x[imageIndex-1].style.display = "block";  
       }
       
       function showChar() {
